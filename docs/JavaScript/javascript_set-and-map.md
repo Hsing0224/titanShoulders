@@ -275,4 +275,5 @@ Object.entries(obj)[1]; // ['2', 'twoValue']
 
 ## Reference
 
-> [[JS] JavaScript 集合（Set）- PJCHENder](https://pjchender.dev/javascript/js-set/)<br />[[JS] JavaScript Map - PJCHENder](https://pjchender.dev/javascript/js-map/)
+> - [[JS] JavaScript 集合（Set）- PJCHENder](https://pjchender.dev/javascript/js-set/)
+> - [[JS] JavaScript Map - PJCHENder](https://pjchender.dev/javascript/js-map/)

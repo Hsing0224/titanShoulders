@@ -94,4 +94,4 @@ mkcd() {
 
 ## Reference
 
-> [Gemini](https://gemini.google.com/)
+> - [Gemini](https://gemini.google.com/)

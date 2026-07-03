@@ -154,7 +154,7 @@ keyword = "";
 
 ## Reference
 
-> [繫結 - Angular](https://angular.tw/guide/property-binding) <br />
-> [Angular 開發實戰：從零開始](https://www.udemy.com/course/angular-zero/) <br />
-> [Angular 入門教學 - 凱哥寫程式](https://www.youtube.com/playlist?list=PLneJIGUTIItu6QrNxEBAUgTXZaHIpO8D9) <br />
-> [圖像 Angular 開發入門：打造高靈活度的網頁應用程式 (iT邦幫忙鐵人賽系列書)](https://www.tenlong.com.tw/products/9789864349821)
+> - [繫結 - Angular](https://angular.tw/guide/property-binding)
+> - [Angular 開發實戰：從零開始](https://www.udemy.com/course/angular-zero/)
+> - [Angular 入門教學 - 凱哥寫程式](https://www.youtube.com/playlist?list=PLneJIGUTIItu6QrNxEBAUgTXZaHIpO8D9)
+> - [圖像 Angular 開發入門：打造高靈活度的網頁應用程式 (iT邦幫忙鐵人賽系列書)](https://www.tenlong.com.tw/products/9789864349821)

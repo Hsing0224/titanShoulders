@@ -208,4 +208,4 @@ $ Now I want you to go and audit the implementation plan and the implementation 
 
 ## Reference
 
-> [規格驅動開發實戰：AI 時代的軟體開發新典範 - Will 保哥](https://learn.duotify.com/courses/sdd)
+> - [規格驅動開發實戰：AI 時代的軟體開發新典範 - Will 保哥](https://learn.duotify.com/courses/sdd)

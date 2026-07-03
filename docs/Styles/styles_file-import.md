@@ -267,6 +267,8 @@ $-secondary-color: blue;
 }
 ```
 
-## reference
+## Reference
 
-> [sass-lang - import](https://sass-lang.com/documentation/at-rules/import/)<br />[sass-lang - use](https://sass-lang.com/documentation/at-rules/use/)<br />[sass-lang - forward](https://sass-lang.com/documentation/at-rules/forward/)
+> - [sass-lang - import](https://sass-lang.com/documentation/at-rules/import/)
+> - [sass-lang - use](https://sass-lang.com/documentation/at-rules/use/)
+> - [sass-lang - forward](https://sass-lang.com/documentation/at-rules/forward/)

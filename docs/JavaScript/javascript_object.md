@@ -66,4 +66,4 @@ delete abc; // false，變數不能被刪除
 
 ## Reference
 
-> [JavaScript 核心篇 - 六角學院](https://www.udemy.com/course/javascript-adv/)
+> - [JavaScript 核心篇 - 六角學院](https://www.udemy.com/course/javascript-adv/)

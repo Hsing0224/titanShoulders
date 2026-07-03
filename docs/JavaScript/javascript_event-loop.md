@@ -118,4 +118,6 @@ setTimeout 2s
 
 ## Reference
 
-> [event loop - loupe](http://latentflip.com/loupe/)<br />[JavaScript Visualized: Event Loop - Lydia Hallie](https://dev.to/lydiahallie/javascript-visualized-event-loop-3dif)<br />[JavaScript Event Loop - JavaScript Tutorial Website](https://www.javascripttutorial.net/javascript-event-loop/)
+> - [event loop - loupe](http://latentflip.com/loupe/)
+> - [JavaScript Visualized: Event Loop - Lydia Hallie](https://dev.to/lydiahallie/javascript-visualized-event-loop-3dif)
+> - [JavaScript Event Loop - JavaScript Tutorial Website](https://www.javascripttutorial.net/javascript-event-loop/)

@@ -25,4 +25,4 @@ description: 關於 CSS 的那些觀念
 
 ## Reference
 
-> [Playing with Infinity in CSS - codersblock](https://codersblock.com/blog/playing-with-infinity-in-css/)
+> - [Playing with Infinity in CSS - codersblock](https://codersblock.com/blog/playing-with-infinity-in-css/)

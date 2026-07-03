@@ -35,4 +35,4 @@ console.log(addTwo(3)); // 5
 
 ## Reference
 
-> [Functional Programming 常用基本技巧及應用與 RxJS 應用](https://ithelp.ithome.com.tw/articles/10243832)
+> - [Functional Programming 常用基本技巧及應用與 RxJS 應用](https://ithelp.ithome.com.tw/articles/10243832)

@@ -214,4 +214,4 @@ hooks 會使用最高權限來執行 shell commands
 
 ## Reference
 
-> [Antigravity Docs](https://antigravity.google/docs/cli-features)
+> - [Antigravity Docs](https://antigravity.google/docs/cli-features)

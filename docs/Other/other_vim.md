@@ -60,6 +60,6 @@ $ vim 檔案.副檔名
 - `:q!`: 強制退出、不存檔。
 - `:w`: 單純存檔。
 
-## reference
+## Reference
 
-> [Joe Chang - 極速開發神器 — vim](https://medium.com/coding-hot-pot/vim%E7%9A%84%E6%8C%87%E4%BB%A4%E7%AD%86%E8%A8%98-1bed0d18e493)
+> - [Joe Chang - 極速開發神器 — vim](https://medium.com/coding-hot-pot/vim%E7%9A%84%E6%8C%87%E4%BB%A4%E7%AD%86%E8%A8%98-1bed0d18e493)

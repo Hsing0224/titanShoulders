@@ -178,7 +178,7 @@ $ aichat -r %code% '我要建立一個 test 資料夾並進入'
 
 > [repo:aigoden/aichat](https://github.com/sigoden/aichat)
 
-## reference
+## Reference
 
-> [AI 程式設計代理人開發全攻略：從入門到實戰 - Will 保哥](https://learn.duotify.com/courses/openai-codex-cli)<br />
-> [在 Windows 打造一個華麗又實用的 WSL 命令列開發環境 - Will 保哥](https://learn.duotify.com/courses/best-wsl-setup)
+> - [AI 程式設計代理人開發全攻略：從入門到實戰 - Will 保哥](https://learn.duotify.com/courses/openai-codex-cli)
+> - [在 Windows 打造一個華麗又實用的 WSL 命令列開發環境 - Will 保哥](https://learn.duotify.com/courses/best-wsl-setup)

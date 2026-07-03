@@ -138,4 +138,4 @@ GEMINI.md 有階層式特性，可依照專案量身打照
 
 ## Reference
 
-> [AI 程式設計代理人開發全攻略：從入門到實戰 - Will 保哥](https://learn.duotify.com/courses/openai-codex-cli)
+> - [AI 程式設計代理人開發全攻略：從入門到實戰 - Will 保哥](https://learn.duotify.com/courses/openai-codex-cli)

@@ -53,4 +53,4 @@ function debounce(fn, delay = 1000, immediate = false) {
 
 ## Reference
 
-> [JavaScript - Debounce (防抖) 常見的面試問題 (Search Bar, API Request) (前端優化) - Wei Wei 前端教學](https://www.youtube.com/watch?v=vCLobXMROZg)
+> - [JavaScript - Debounce (防抖) 常見的面試問題 (Search Bar, API Request) (前端優化) - Wei Wei 前端教學](https://www.youtube.com/watch?v=vCLobXMROZg)

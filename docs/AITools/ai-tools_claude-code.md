@@ -331,6 +331,6 @@ $ claude --dangerously-skip-permission
 
 ## Reference
 
-> [Claude Code Docs](https://code.claude.com/docs/zh-TW/overview)<br />
-> [AI 程式設計代理人開發全攻略：從入門到實戰 - Will 保哥](https://learn.duotify.com/courses/openai-codex-cli)<br />
-> [Claude Code /loop 完整教學：把 Claude 變成定時自動執行 agent 的方法、應用場景與限制 - 自由揚John](https://foreverwebs.com/blog/claude-code-loop-recurring-tasks-tutorial)
+> - [Claude Code Docs](https://code.claude.com/docs/zh-TW/overview)
+> - [AI 程式設計代理人開發全攻略：從入門到實戰 - Will 保哥](https://learn.duotify.com/courses/openai-codex-cli)
+> - [Claude Code /loop 完整教學：把 Claude 變成定時自動執行 agent 的方法、應用場景與限制 - 自由揚John](https://foreverwebs.com/blog/claude-code-loop-recurring-tasks-tutorial)
