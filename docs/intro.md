@@ -133,7 +133,7 @@ sidebar_position: 0
 - ✅ Claude Code #14
 - ✅ Antigravity CLI #15
 - ✅ Gemini CLI #16
-- ✅ SKILLs #20
+- ✅ SKILLS #20
 
 ### DevTools #12
 
