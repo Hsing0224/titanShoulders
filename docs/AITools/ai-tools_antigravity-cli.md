@@ -33,7 +33,7 @@ sidebar_label: Antigravity CLI
 | 指令                     | 說明                                                                    |
 | :----------------------- | :---------------------------------------------------------------------- |
 | `/help` 或 `?`           | 顯示相關用法說明，可用左右方向鍵切換分頁                                |
-| `/exit` 或 `/exit`       | 退出 CLI 如果加上 `--delete` 可以徹底刪除該此對話所有本地記錄和暫存檔案 |
+| `/exit` 或 `/quit`       | 退出 CLI 如果加上 `--delete` 可以徹底刪除該此對話所有本地記錄和暫存檔案 |
 | `/usage` 或 `/quota`     | 檢視目前各個模組使用狀況                                                |
 | `/upgrade`               | 開啟 Gemini Code Assist 升級頁面                                        |
 | `/config` 或 `/settings` | 調整 Antigravity CLI 設定                                               |
