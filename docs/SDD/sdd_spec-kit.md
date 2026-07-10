@@ -1,6 +1,6 @@
 ---
 sidebar_position: 11
-sidebar_label: spec-kit
+sidebar_label: Spec Kit
 ---
 
 # GitHub Spec Kit
@@ -125,7 +125,7 @@ $ specify version
 
 - 參與角色：PG
 - 指令： `/speckit.plan`
-- 輸出：plan.md + data-model.md + research.md + quickstart.md + contracts/
+- 輸出：plan.md + data-model.md + research.md + quickstart.md + contracts/\*.md
 
 ### checklist (可選)
 
@@ -144,7 +144,7 @@ $ specify version
 ### analyze (可選)
 
 - 指令：`/speckit.analyze`
-- 輸出：讀取 spec.md, plan.md, task.md 來產出分析報告
+- 輸出：讀取 spec.md, plan.md, tasks.md 來產出分析報告
 
 :::note
 可以使用 `/speckit.analyze` 將分析報告存成 `analyze-01.md`。
@@ -199,6 +199,31 @@ $ Now I want you to go and audit the implementation plan and the implementation 
 :::
 
 讓 AI 檢查一次有沒有過度設計的問題
+
+## 一套流程結束後
+
+### 保留的檔案
+
+跑完流程後會有幾個檔案，哪些是可以保留
+
+| 文件                      | 文件產生階段            | 目的                             | 是否保留 |
+| :------------------------ | :---------------------- | :------------------------------- | :------: |
+| constitution.md           | `/specify.constitution` | 整體規格驅動開發的準則           |    ✅    |
+| spec.md                   | `/specify.specify`      | 系統規格書                       |    ✅    |
+| checklist/requirements.md | `/specify.specify`      | 需求盤點清單                     |    ❌    |
+| data-model.md             | `/specify.plan`         | 資料模型，描述記憶體內狀態和佈局 |    ✅    |
+| plan.md                   | `/specify.plan`         | 實作計劃清單                     |    ❌    |
+| contracts/\*.md           | `/specify.plan`         | 規則、驗收範例                   |    ✅    |
+| research.md               | `/specify.plan`         | 實作層級決策                     |    ❌    |
+| quickstart.md             | `/specify.plan`         | 開發指令                         |    ❌    |
+| tasks.md                  | `/specify.tasks`        |                                  |    ❌    |
+
+### 進行下一輪開發
+
+由於最一開始已經建立了憲法(constitution)，在沒有需要更動的需求，無需再重新跑一次。可以直接：
+
+1. 切回主分支
+2. 繼續 `/speckit.specify` 來進行規格的確立
 
 ## 如何更新
 
