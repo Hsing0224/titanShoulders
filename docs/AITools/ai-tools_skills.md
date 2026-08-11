@@ -7,21 +7,19 @@ sidebar_label: SKILLS
 
 平常開發使用的 skills
 
-## 管理套件 - vercel-labs/skills
+## 管理套件工具
 
-使用套件統一管理，又可以不定期 update skills。
+### vercel-labs/skills
 
-> - [GitHub repository](https://github.com/vercel-labs/skills)
-> - [skill.sh](https://www.skills.sh/)
-
-可以依照指引直接使用。又或者可以安裝至本機內，利用 `skills` 指令執行。
+使用套件統一管理，又可以不定期 update skills。<br />
+依照指引直接使用。又或者可以安裝至本機內，利用 `skills` 指令執行。
 
 ```shell
 $ npm i skills -g
 ```
 
 :::note
-如果全域安裝，目前版本無法連結到 Antigravity CLI 抓到 skill，<br />原因為 gemini 沒有去讀 .agnes 資料夾，故需要執行複製的動作。
+如果全域安裝，目前版本無法連結到 Antigravity CLI 抓到 skill，<br />原因為 gemini 沒有去讀 .agents 資料夾，故需要執行複製的動作。
 
 ```shell
 $ cp -r ~/.claude/skills/. ~/.gemini/antigravity-cli/skills/
@@ -29,112 +27,245 @@ $ cp -r ~/.claude/skills/. ~/.gemini/antigravity-cli/skills/
 
 :::
 
-## SKILLS
+#### commands
+
+- find: 透過工具來搜尋符合關鍵字的 skill
+- add: 安裝指定的 skill
+- list: 列出已安裝的 skill
+- update: 更新所有 skill
+- remove: 移除指定的 skill
+
+#### reference
+
+> - [GitHub repository](https://github.com/vercel-labs/skills)
+> - [skill.sh](https://www.skills.sh/)
+
+## 文件處理類 SKILLs
 
 使用上除了直接使用 slash command 外，也可以透過一些關鍵字，會觸發 agent 抓取對應的 skill 做使用
 
-### 文件處理
-
-#### anthropics/skills/skill-creator
-
-> - [GitHub repository](https://github.com/anthropics/skills/tree/main/skills/skill-creator)
+### anthropics/skills/skill-creator
 
 為建立 skill 文件而使用的 skill，可產出標準化的 skill
 
+#### 安裝
+
 ```shell
-$ 我想建立一個關於專屬於此 CMS JSON Schema 產生的 skill，核心規則是...
+$ skills add anthropics/skills@skill-creator -g
 ```
+
+#### 觸發指令
+
+```shell
+$ /skill-creator 我想建立一個關於專屬於此 CMS JSON Schema 產生的 skill，核心規則是...
+```
+
+#### reference
+
+> - [GitHub repository](https://github.com/anthropics/skills/tree/main/skills/skill-creator)
 
 ### vercel-labs/skills/find-skills
 
-> - [GitHub repository](https://github.com/vercel-labs/skills/tree/main/skills/find-skills)
+搜尋合適的 skills，且會給予建議和印出安裝指令
 
-透過 skills.sh 搜尋的 skills
+#### 安裝
 
 ```shell
-$ 幫我找尋 Nx Monorepo 的相關 skills
+$ skills add vercel-labs/skills@find-skills -g
 ```
 
-### 前端開發
+#### 觸發指令
 
-#### nextlevelbuilder/ui-ux-pro-max-skill
+```shell
+$ 幫我尋找符合這專案的 skills
+$ /find-skills 幫我尋找符合這專案的 skills
+```
+
+#### reference
+
+> - [GitHub repository](https://github.com/vercel-labs/skills/tree/main/skills/find-skills)
+
+## 前端開發類 SKILLs
+
+### nextlevelbuilder/ui-ux-pro-max-skill
 
 前端設計與 UI/UX 的審查工具，集結目前設計和操作面的規則
 
+#### 安裝
+
+```shell
+$ skills add nextlevelbuilder/ui-ux-pro-max-skill@ui-ux-pro-max -g
+```
+
+#### 觸發指令
+
+```shell
+$ /ui-ux-pro-max 設計一個 Admin Panel，需要有側邊欄、數據表格和圖表
+$ 建立 Design Token # design system
+$ 風格與主色調推薦 # ui-style
+$ 建立 Modal/Button/Form 元件 # component-build
+$ WCAG 2.2 AA 無障礙檢核 # a11y-audit
+$ 頁面 UX 反模式檢查 # ux-review
+$ 圖表類型選型 # chart-guide
+```
+
+#### reference
+
 > - [GitHub repository](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)
 
-任何會改變「看起來如何、感覺如何、如何互動」的任務，都應該啟用此 Skill。
+### angular/skills
+
+官方 skill，結合了現代化開發和新專案初始化技能
+
+#### 安裝
 
 ```shell
-# 建立新頁面 / 產品
-$ 幫我設計一個 SaaS 訂閱管理 Dashboard，用 Next.js 實作
-$ 建立一個電商首頁 Landing Page，風格要有 glassmorphism 質感
-$ 設計一個 Admin Panel，需要有側邊欄、數據表格和圖表
-
-# 建立 / 重構 UI 元件
-$ 幫我建一個符合 WCAG 2.2 AA 標準的 Modal 元件
-$ 重構這個 Form 元件，讓錯誤提示更清楚、支援行動裝置
-$ 設計一套 Button 元件系統，包含 primary/secondary/danger 狀態
-
-# 選色 / 字型 / 版型
-$ 這個 Health App 適合用什麼設計風格和主色調？
-$ 我的產品是 FinTech 應用，推薦合適的色彩搭配和字型組合
-$ 幫我建立一套 Design Token，支援深色模式切換
-
-# UI 審查 / 品質優化
-
-$ 幫我 review 這個頁面的 UX 問題，找出反設計模式
-$ 這個介面「感覺不夠專業」，幫我找出原因並修正
-$ 上線前幫我做一次完整的 UI 品質審查 checklist
-
-# 圖表 / 資料視覺化
-$ 我有銷售趨勢資料，幫我選最適合的圖表類型並實作
-$ 這個圖表在色盲使用者下辨識度不夠，幫我修正
-
-# 跨平台對齊
-$ 幫我確認這個 React Native App 的導覽結構是否符合 iOS HIG 規範
-$ 建立一套在 Web 和 Mobile 都能運作的 Design System
+$ skills add https://github.com/angular/skills -g
 ```
 
-#### angular/skills
-
-angular 相關元件使用規範，利用 angular 的一些關鍵字可以觸發該 skill
-
-- Components
-- Inputs / Outputs
-- Signals / 狀態管理
-- Forms
-- Dependency Injection
-- Routing
-- Styling / Animations
-- Accessibility (ARIA)
-- Testing
-- Tooling / CLI
+#### 觸發指令
 
 ```shell
-$ 幫我建立一個叫  tool-card  的 standalone 元件，接受  title  和  description  兩個 input
-$ 幫我做一個登入表單
-$ 新增一個 base64 encoder 工具的 lazy route
+$ /angular-developer # 建立 angular 相關 core、component
+$ /angular-new-app # 初始化設定
 ```
 
-### 動態設計與動畫
+#### reference
 
-#### lottiefiles/motion-design-skill
+> - [GitHub repository](https://github.com/angular/skills)
 
-### 後端開發
+## 動態設計與動畫類 SKILLs
 
-#### Kadajett/agent-nestjs-skills
+### lottiefiles/motion-design-skill
 
-### 架構層級
+官方 skill
 
-#### giuseppe-trisciuoglio/developer-kit@nx-monorepo
+#### 安裝
 
-## 自動化測試
+```shell
+$ skills add lottiefiles/motion-design-skill -g
+```
 
-#### microsoft/playwright-cli
+#### 觸發指令
 
-### 工作流與開發思維
+```shell
+$ /motion-design
+```
 
-#### andrej-karpathy-skills/skills/karpathy-guidelines
+依照描述會啟用自身所帶模組來實作
 
-#### juliusbrussee/caveman
+#### reference
+
+- [GitHub repository](https://github.com/LottieFiles/motion-design-skill)
+
+## 後端開發類 SKILLs
+
+### Kadajett/agent-nestjs-skills
+
+提供 NestJS 的最佳實踐規則，讓 agent 遵循規範開發。
+
+#### 安裝
+
+```shell
+$ skills add kadajett/agent-nestjs-skills -g
+```
+
+#### 觸發指令
+
+```shell
+$ /nestjs-best-practices
+```
+
+#### reference
+
+> - [GitHub repository](https://github.com/Kadajett/agent-nestjs-skills)
+
+## 自動化測試類 SKILLs
+
+### microsoft/playwright-cli
+
+使用已安裝的 playwright-cli
+
+#### 安裝
+
+```shell
+$ skills add microsoft/playwright-cli -g
+```
+
+#### 觸發指令
+
+```shell
+$ /playwright-cli
+```
+
+#### reference
+
+> - [GitHub repository](https://github.com/microsoft/playwright-cli)
+
+## 工作流與開發思維類 SKILLs
+
+### andrej-karpathy-skills/skills/karpathy-guidelines
+
+為 agent 提供一份指南，使 agent 能夠依照文件提供的流程開發
+
+#### 安裝
+
+```shell
+$ skills add https://github.com/multica-ai/andrej-karpathy-skills -g
+```
+
+#### 觸發指令
+
+```shell
+$ karpathy-guidelines
+```
+
+#### reference
+
+> - [GitHub repository](https://github.com/multica-ai/andrej-karpathy-skills)
+
+### juliusbrussee/caveman
+
+壓縮輸入與輸出 token
+
+#### 安裝
+
+```shell
+$ skills add juliusbrussee/caveman -g
+```
+
+#### 觸發指令
+
+```shell
+# 核心極簡對話
+$ caveman mode
+$ /caveman
+$ /caveman full # 預設
+$ /caveman lite # 輕量精簡
+$ /caveman ultra # 極致精簡
+$ /caveman wenyan # 文言文
+$ /caveman wenyan-lite # 極致精簡文言文
+$ /caveman wenyan-ultra # 極致精簡文言文
+
+# 子任務分工指引
+$ /cavecrew
+
+# 說明檔壓縮(AGENTS.md/CLAUDE.md)
+$ /caveman-compress
+
+# 極簡 commit message
+$ /caveman-commit
+
+# 精準 code review
+$ /caveman-review
+
+# 檢視 /usage
+$ /caveman-stats
+
+# caveman 的說明選單
+$ /caveman-help
+```
+
+#### reference
+
+> - [GitHub repository](https://github.com/JuliusBrussee/caveman)
