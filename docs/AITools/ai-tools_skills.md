@@ -217,7 +217,7 @@ $ skills add https://github.com/multica-ai/andrej-karpathy-skills -g
 #### 觸發指令
 
 ```shell
-$ karpathy-guidelines
+$ /karpathy-guidelines
 ```
 
 #### reference
