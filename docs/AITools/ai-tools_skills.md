@@ -19,10 +19,17 @@ $ npm i skills -g
 ```
 
 :::note
-如果全域安裝，目前版本無法連結到 Antigravity CLI 抓到 skill，<br />原因為 gemini 沒有去讀 .agents 資料夾，故需要執行複製的動作。
+如果全域安裝，目前版本無法連結到 Antigravity CLI 抓到 skill，<br />原因為 gemini 沒有去讀 .agents 資料夾，故需要執行複製的動作。<br />
+已經在 `.gemini/antigravity-cli/` 資料夾下建立 skills 資料夾
 
 ```shell
-$ cp -r ~/.claude/skills/. ~/.gemini/antigravity-cli/skills/
+for item in ~/.claude/skills/*; do
+  [ -e "$item" ] || [ -L "$item" ] || continue
+  target=$(realpath "$item")
+  if [ -e "$target" ]; then
+    ln -sfn "$target" "$HOME/.gemini/antigravity-cli/skills/$(basename "$item")"
+  fi
+done
 ```
 
 :::
