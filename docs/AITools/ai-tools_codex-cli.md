@@ -139,15 +139,15 @@ Codex 會依照位置尋找 `AGENTS.md`，並由上而下合併。
 ### 圖片
 
 ```shell
-$ codex -i demo.png "prompt"
-$ codex --image demo1.png,demo2.jpg "prompt" # 多張圖片
+codex -i demo.png "prompt"
+codex --image demo1.png,demo2.jpg "prompt" # 多張圖片
 ```
 
 ### yolo mode
 
 ```shell
-$ codex --dangerously-bypass-approvals-and-sandbox "prompt"
-$ codex --yolo "prompt" # 短寫法
+codex --dangerously-bypass-approvals-and-sandbox "prompt"
+codex --yolo "prompt" # 短寫法
 ```
 
 ## 額外使用技巧

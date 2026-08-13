@@ -14,14 +14,14 @@ sidebar_label: 基礎知識
 會在一些技術文看到
 
 ```shell
-$ ls
+ls
 ```
 
 看到就納悶，為什麼需要 `$` 呢？我都直接打 `ls`。<br />原來是區分 "輸入" 與 "輸出"。<br />
 而如果有 `#`，則代表最高權限
 
 ```shell
-# systemctl restart
+systemctl restart
 ```
 
 ## 使用技巧
@@ -33,9 +33,9 @@ $ ls
 - `;`: 不管成功與否皆執行
 
 ```shell
-$ mkdir dist && cp app.js dist/
-$ ping host || echo "unreachable"
-$ cd /tmp ; ls ; pwd
+mkdir dist && cp app.js dist/
+ping host || echo "unreachable"
+cd /tmp ; ls ; pwd
 ```
 
 ### |
@@ -43,7 +43,7 @@ $ cd /tmp ; ls ; pwd
 把前一個指令輸出結果往後傳
 
 ```shell
-$ ls -la | grep ".js"
+ls -la | grep ".js"
 ```
 
 ### >、>>
@@ -73,7 +73,7 @@ unalias ll # unalias 為取消
 原本指令為：
 
 ```shell
-$ mkdir test_dir && cd test_dir
+mkdir test_dir && cd test_dir
 ```
 
 可將其封裝：

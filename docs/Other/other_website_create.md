@@ -211,7 +211,7 @@ LINE 官方在 2025/3/31 關閉 LINE notify 服務，可改用 LINE Message API 
 整個訊息的架構為【權杖名稱】 + 設定的訊息
 
 ```yml
-# 發送 LINE Notify 通知
+發送 LINE Notify 通知
 - name: Send LINE Notify
   env:
     LINE_NOTIFY_TOKEN: ${{ secrets.LINE_NOTIFY_TOKEN }} # LINE notify 的存取權杖

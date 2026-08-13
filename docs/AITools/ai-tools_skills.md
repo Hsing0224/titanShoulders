@@ -15,7 +15,7 @@ sidebar_label: SKILLS
 依照指引直接使用。又或者可以安裝至本機內，利用 `skills` 指令執行。
 
 ```shell
-$ npm i skills -g
+npm i skills -g
 ```
 
 :::note
@@ -58,13 +58,13 @@ done
 #### 安裝
 
 ```shell
-$ skills add anthropics/skills@skill-creator -g
+skills add anthropics/skills@skill-creator -g
 ```
 
 #### 觸發指令
 
 ```shell
-$ /skill-creator 我想建立一個關於專屬於此 CMS JSON Schema 產生的 skill，核心規則是...
+/skill-creator 我想建立一個關於專屬於此 CMS JSON Schema 產生的 skill，核心規則是...
 ```
 
 #### reference
@@ -78,14 +78,14 @@ $ /skill-creator 我想建立一個關於專屬於此 CMS JSON Schema 產生的 
 #### 安裝
 
 ```shell
-$ skills add vercel-labs/skills@find-skills -g
+skills add vercel-labs/skills@find-skills -g
 ```
 
 #### 觸發指令
 
 ```shell
-$ 幫我尋找符合這專案的 skills
-$ /find-skills 幫我尋找符合這專案的 skills
+幫我尋找符合這專案的 skills
+/find-skills 幫我尋找符合這專案的 skills
 ```
 
 #### reference
@@ -101,19 +101,19 @@ $ /find-skills 幫我尋找符合這專案的 skills
 #### 安裝
 
 ```shell
-$ skills add nextlevelbuilder/ui-ux-pro-max-skill@ui-ux-pro-max -g
+skills add nextlevelbuilder/ui-ux-pro-max-skill@ui-ux-pro-max -g
 ```
 
 #### 觸發指令
 
 ```shell
-$ /ui-ux-pro-max 設計一個 Admin Panel，需要有側邊欄、數據表格和圖表
-$ 建立 Design Token # design system
-$ 風格與主色調推薦 # ui-style
-$ 建立 Modal/Button/Form 元件 # component-build
-$ WCAG 2.2 AA 無障礙檢核 # a11y-audit
-$ 頁面 UX 反模式檢查 # ux-review
-$ 圖表類型選型 # chart-guide
+/ui-ux-pro-max 設計一個 Admin Panel，需要有側邊欄、數據表格和圖表
+建立 Design Token # design system
+風格與主色調推薦 # ui-style
+建立 Modal/Button/Form 元件 # component-build
+WCAG 2.2 AA 無障礙檢核 # a11y-audit
+頁面 UX 反模式檢查 # ux-review
+圖表類型選型 # chart-guide
 ```
 
 #### reference
@@ -127,14 +127,14 @@ $ 圖表類型選型 # chart-guide
 #### 安裝
 
 ```shell
-$ skills add https://github.com/angular/skills -g
+skills add https://github.com/angular/skills -g
 ```
 
 #### 觸發指令
 
 ```shell
-$ /angular-developer # 建立 angular 相關 core、component
-$ /angular-new-app # 初始化設定
+/angular-developer # 建立 angular 相關 core、component
+/angular-new-app # 初始化設定
 ```
 
 #### reference
@@ -150,13 +150,13 @@ $ /angular-new-app # 初始化設定
 #### 安裝
 
 ```shell
-$ skills add lottiefiles/motion-design-skill -g
+skills add lottiefiles/motion-design-skill -g
 ```
 
 #### 觸發指令
 
 ```shell
-$ /motion-design
+/motion-design
 ```
 
 依照描述會啟用自身所帶模組來實作
@@ -174,13 +174,13 @@ $ /motion-design
 #### 安裝
 
 ```shell
-$ skills add kadajett/agent-nestjs-skills -g
+skills add kadajett/agent-nestjs-skills -g
 ```
 
 #### 觸發指令
 
 ```shell
-$ /nestjs-best-practices
+/nestjs-best-practices
 ```
 
 #### reference
@@ -196,13 +196,13 @@ $ /nestjs-best-practices
 #### 安裝
 
 ```shell
-$ skills add microsoft/playwright-cli -g
+skills add microsoft/playwright-cli -g
 ```
 
 #### 觸發指令
 
 ```shell
-$ /playwright-cli
+/playwright-cli
 ```
 
 #### reference
@@ -218,13 +218,13 @@ $ /playwright-cli
 #### 安裝
 
 ```shell
-$ skills add https://github.com/multica-ai/andrej-karpathy-skills -g
+skills add https://github.com/multica-ai/andrej-karpathy-skills -g
 ```
 
 #### 觸發指令
 
 ```shell
-$ /karpathy-guidelines
+/karpathy-guidelines
 ```
 
 #### reference
@@ -238,39 +238,39 @@ $ /karpathy-guidelines
 #### 安裝
 
 ```shell
-$ skills add juliusbrussee/caveman -g
+skills add juliusbrussee/caveman -g
 ```
 
 #### 觸發指令
 
 ```shell
-# 核心極簡對話
-$ caveman mode
-$ /caveman
-$ /caveman full # 預設
-$ /caveman lite # 輕量精簡
-$ /caveman ultra # 極致精簡
-$ /caveman wenyan # 文言文
-$ /caveman wenyan-lite # 極致精簡文言文
-$ /caveman wenyan-ultra # 極致精簡文言文
+核心極簡對話
+caveman mode
+/caveman
+/caveman full # 預設
+/caveman lite # 輕量精簡
+/caveman ultra # 極致精簡
+/caveman wenyan # 文言文
+/caveman wenyan-lite # 極致精簡文言文
+/caveman wenyan-ultra # 極致精簡文言文
 
-# 子任務分工指引
-$ /cavecrew
+子任務分工指引
+/cavecrew
 
-# 說明檔壓縮(AGENTS.md/CLAUDE.md)
-$ /caveman-compress
+說明檔壓縮(AGENTS.md/CLAUDE.md)
+/caveman-compress
 
-# 極簡 commit message
-$ /caveman-commit
+極簡 commit message
+/caveman-commit
 
-# 精準 code review
-$ /caveman-review
+精準 code review
+/caveman-review
 
-# 檢視 /usage
-$ /caveman-stats
+檢視 /usage
+/caveman-stats
 
-# caveman 的說明選單
-$ /caveman-help
+caveman 的說明選單
+/caveman-help
 ```
 
 #### reference

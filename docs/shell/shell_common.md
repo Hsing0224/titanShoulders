@@ -45,13 +45,13 @@ list 的縮寫，列出目錄下的檔案
 指令可以組合一起
 
 ```shell
-$ ls -t -r # 可以寫成 ls -tr
+ls -t -r # 可以寫成 ls -tr
 ```
 
 如果指令有排序上的衝突
 
 ```shell
-$ ls -tS # 會參考最後一個，所以這邊會以檔案大小排序 ls -S 來執行
+ls -tS # 會參考最後一個，所以這邊會以檔案大小排序 ls -S 來執行
 ```
 
 :::
@@ -88,27 +88,27 @@ Make directory 的縮寫，建立目錄
 #### 建立多層目錄
 
 ```shell
-$ mkdir -p project/src/assets
+mkdir -p project/src/assets
 ```
 
 #### 一次建立多個資料夾
 
 ```shell
-$ mkdir docs images videos
+mkdir docs images videos
 ```
 
 ```shell
-$ mkdir -p project/{docs,images,videos}
+mkdir -p project/{docs,images,videos}
 ```
 
 #### 顯示執行進度
 
 ```shell
-$ mkdir -pv project/{docs,images,videos}
-# project
-# project/docs
-# project/images
-# project/videos
+mkdir -pv project/{docs,images,videos}
+project
+project/docs
+project/images
+project/videos
 ```
 
 ### touch
@@ -122,7 +122,7 @@ Copy，複製檔案
 #### 複製整個目錄
 
 ```shell
-$ cp -r project_folder project_backup
+cp -r project_folder project_backup
 ```
 
 #### 避免覆蓋現有檔案
@@ -130,8 +130,8 @@ $ cp -r project_folder project_backup
 使用 `-i`，如果有相同檔名，會詢問是否覆蓋
 
 ```shell
-$ cp -i photo.jpg ~/pictures/
-# 終端機詢問：overwrite ~/Pictures/photo.jpg? (y/n)
+cp -i photo.jpg ~/pictures/
+終端機詢問：overwrite ~/Pictures/photo.jpg? (y/n)
 ```
 
 :::tip
@@ -142,7 +142,7 @@ $ cp -i photo.jpg ~/pictures/
   :::
 
 ```shell
-$ cp -n photo.jpg ~/pictures/ # 不覆蓋模式，有相同檔名則直接跳過
+cp -n photo.jpg ~/pictures/ # 不覆蓋模式，有相同檔名則直接跳過
 ```
 
 ### mv
@@ -150,8 +150,8 @@ $ cp -n photo.jpg ~/pictures/ # 不覆蓋模式，有相同檔名則直接跳過
 移動檔案，與 `cp` 一樣有不覆蓋檔案的保護機制
 
 ```shell
-$ mv -i source.txt target.txt # 覆蓋前會先詢問
-$ mv -n photo.jpg pictures/ # 若目標資料夾有相同檔案，則直接跳過
+mv -i source.txt target.txt # 覆蓋前會先詢問
+mv -n photo.jpg pictures/ # 若目標資料夾有相同檔案，則直接跳過
 ```
 
 :::tip
@@ -170,7 +170,7 @@ $ mv -n photo.jpg pictures/ # 若目標資料夾有相同檔案，則直接跳�
 只刪除空的資料夾
 
 ```shell
-$ rm -d folder/
+rm -d folder/
 ```
 
 #### 刪除目錄
@@ -182,8 +182,8 @@ $ rm -d folder/
 傳說中的大魔王，真的需要執行前請先再三檢查路徑，可以養成先使用 `ls`，確認檔案後再換成 `rm` 的習慣
 
 ```shell
-$ ls
-$ rm -rf
+ls
+rm -rf
 ```
 
 :::
@@ -200,7 +200,7 @@ concatenate 的縮寫，指令功能為讀取並輸出內容<br />
 ```
 
 ```shell
-$ "$(cat './long-text.md')"
+"$(cat './long-text.md')"
 ```
 
 :::tip
@@ -232,14 +232,14 @@ $ "$(cat './long-text.md')"
 - `-v`: 反向，只顯示不符合的行
 
 ```shell
-# 在 server.log 中尋找 error 關鍵字
-$ grep "error" server.log
+在 server.log 中尋找 error 關鍵字
+grep "error" server.log
 
-# 搭配管線，將 less 的內容交給 grep 過濾（尋找設定檔中的 port）
-$ cat config.yaml | grep "port"
+搭配管線，將 less 的內容交給 grep 過濾（尋找設定檔中的 port）
+cat config.yaml | grep "port"
 
-# 在當前目錄及所有子目錄下，尋找包含 "Angular" 字眼（不分大小寫）的檔案內容
-$ grep -ir "angular" .
+在當前目錄及所有子目錄下，尋找包含 "Angular" 字眼（不分大小寫）的檔案內容
+grep -ir "angular" .
 ```
 
 ## 環境變數與腳本套用
@@ -251,9 +251,9 @@ $ grep -ir "angular" .
 - unset: 刪除變數
 
 ```shell
-$ echo "export HELLO="World""
-$ echo $HELLO # World
-$ unset HELLO # 刪除該環境變數
+echo "export HELLO="World""
+echo $HELLO # World
+unset HELLO # 刪除該環境變數
 ```
 
 ### source
@@ -261,7 +261,7 @@ $ unset HELLO # 刪除該環境變數
 簡寫為 `.`，當腳本有修改，使用 `source` 來套用設定
 
 ```shell
-$ source ~/.zshrc # 也可以寫 . ~/.zshrc
+source ~/.zshrc # 也可以寫 . ~/.zshrc
 ```
 
 ## 系統權限與管理
@@ -300,7 +300,7 @@ Change Mode 的縮寫，更改檔案的讀取、寫入、執行權限
 - 權限： `r`, `w`, `x`
 
 ```shell
-$ chmod u=rwx,go=r . #將當前目錄設定為全開，群組、其他人一律強制改為唯讀
+chmod u=rwx,go=r . #將當前目錄設定為全開，群組、其他人一律強制改為唯讀
 ```
 
 ### top
@@ -313,8 +313,8 @@ List Open Files 的縮寫，列出開啟的檔案，可以看到目前有哪些�
 可以獲取 `PID` (行程識別碼) 來做其他動作
 
 ```shell
-# 找該 port 有沒有被佔用，-i 為網路連線
-$ lsof -i :8080
+找該 port 有沒有被佔用，-i 為網路連線
+lsof -i :8080
 ```
 
 ### kill
@@ -332,7 +332,7 @@ $ lsof -i :8080
 如果要將 port 釋放，則可以使用
 
 ```shell
-$ kill <PID>
+kill <PID>
 ```
 
 ### jobs
@@ -340,7 +340,7 @@ $ kill <PID>
 查看目前所有在背景的工作
 
 ```shell
-$ jobs
+jobs
 ```
 
 :::note
@@ -370,14 +370,14 @@ $ jobs
 當後面加上 `&`，則為直接在背景執行
 
 ```shell
-$ npm run dev &
+npm run dev &
 ```
 
 或者是讓他在背景繼續執行
 
 ```shell
-$ bg # 會在 jobs 中帶有 + 的工作直接繼續
-$ bg %<JOB_ID>
+bg # 會在 jobs 中帶有 + 的工作直接繼續
+bg %<JOB_ID>
 ```
 
 :::
@@ -387,7 +387,7 @@ $ bg %<JOB_ID>
 把工作拉回前台繼續執行
 
 ```shell
-$ fg %<JOB_ID>
+fg %<JOB_ID>
 ```
 
 :::note
@@ -399,7 +399,7 @@ $ fg %<JOB_ID>
 讓程式佔用一個序列(原地發呆)，單位是秒
 
 ```shell
-$ sleep <Seconds>
+sleep <Seconds>
 ```
 
 ## 其他

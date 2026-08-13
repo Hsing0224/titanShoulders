@@ -105,7 +105,7 @@ sidebar_label: Antigravity CLI
 且將該檔案加入執行的權限。
 
 ```shell
-$ chmod +x ~/.gemini/antigravity-cli/statusline.sh
+chmod +x ~/.gemini/antigravity-cli/statusline.sh
 ```
 
 #### /title
@@ -125,7 +125,7 @@ $ chmod +x ~/.gemini/antigravity-cli/statusline.sh
 且將該檔案加入執行的權限。
 
 ```shell
-$ chmod +x ~/.gemini/antigravity-cli/title.sh
+chmod +x ~/.gemini/antigravity-cli/title.sh
 ```
 
 可設定幾種狀態
@@ -165,7 +165,7 @@ $ chmod +x ~/.gemini/antigravity-cli/title.sh
 設定一次性或週期性的任務觸發。支援 [Cron 表達式](./../Other/other_cron.md)
 
 ```shell
-$ /schedule 每小時執行一次單元測試
+/schedule 每小時執行一次單元測試
 ```
 
 #### /skills

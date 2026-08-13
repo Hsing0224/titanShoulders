@@ -9,7 +9,7 @@ sidebar_position: 20
 ## 開啟
 
 ```shell
-$ vim 檔案.副檔名
+vim 檔案.副檔名
 ```
 
 ## 模式

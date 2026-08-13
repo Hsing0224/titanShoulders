@@ -27,11 +27,11 @@ oh my zsh 的眾多主題之一，讓介面更為美觀
 Homebrew 是 MacOS/Linux 系統的套件管理工具，可至[官網](https://brew.sh/)依照步驟安裝
 
 ```shell
-# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 ```shell
-$ brew install [要安裝的套件]
+brew install [要安裝的套件]
 ```
 
 ### 安裝清單
@@ -54,9 +54,9 @@ $ brew install [要安裝的套件]
 - aichat: 串接 API 後可直接在 shell 輸入 prompt
 
 ```shell
-# 安裝 GUI 終端機應用程式
-$ brew install --cask iterm2
+安裝 GUI 終端機應用程式
+brew install --cask iterm2
 
-$ # 安裝所有 CLI 開發與系統工具
+安裝所有 CLI 開發與系統工具
 brew install btop eza zoxide bat tlrc fd ripgrep fzf jq yq zstd git gh uv aichat
 ```

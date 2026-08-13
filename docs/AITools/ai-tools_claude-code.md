@@ -176,14 +176,14 @@ sidebar_label: Claude Code
 單次執行：
 
 ```shell
-$ CLAUDE_CODE_NEW_INIT=1 claude
+CLAUDE_CODE_NEW_INIT=1 claude
 ```
 
 設定在環境變數：
 
 ```shell
-$ export CLAUDE_CODE_NEW_INIT=1 # 需要重新讀取設定檔
-$ claude
+export CLAUDE_CODE_NEW_INIT=1 # 需要重新讀取設定檔
+claude
 ```
 
 #### /permissions
@@ -242,16 +242,16 @@ $ claude
 當關掉 session 時 `/loop` 也會跟著停止。
 
 ```shell title="Claude Code"
-$ /loop 每 1 分鐘檢查部署是否有完成，如果失敗則通知我 # 使用自然語言設定
-$ /loop 10m /sayhi # 可以將任務寫成 skill
+/loop 每 1 分鐘檢查部署是否有完成，如果失敗則通知我 # 使用自然語言設定
+/loop 10m /sayhi # 可以將任務寫成 skill
 ```
 
 :::tip
 雖然生命週期依附在 session，但最好是為 `/loop` 設定一個停止條件，避免荷包失血
 
 ```shell title="Claude Code"
-$ /loop 每 1 分鐘檢查部署是否有完成，失敗則通知我，如果完成則結束此任務 # 使用自然語言設定
-$ /loop 10m /sayhi，最多 10 次 # 可以將任務寫成 skill
+/loop 每 1 分鐘檢查部署是否有完成，失敗則通知我，如果完成則結束此任務 # 使用自然語言設定
+/loop 10m /sayhi，最多 10 次 # 可以將任務寫成 skill
 ```
 
 :::
@@ -278,7 +278,7 @@ $ /loop 10m /sayhi，最多 10 次 # 可以將任務寫成 skill
 ## yolo mode
 
 ```shell
-$ claude --dangerously-skip-permission
+claude --dangerously-skip-permission
 ```
 
 ## hook
